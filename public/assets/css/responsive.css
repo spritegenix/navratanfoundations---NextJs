@@ -34,6 +34,7 @@
 	.about-section-two .about-text .common-heading .title {
 		font-size: 38px;
 	}
+	
 }
 
 /*=======  Extra Large devices (desktops, less than 1400px) =======*/
@@ -140,6 +141,13 @@
 
 /*=======  Large devices (desktops, less than 1200px) =======*/
 @media (max-width: 1199.98px) {
+	.navbar-wrapper .nav-menu a{
+		font-size: 12px;
+	}
+	.main-btn{
+		padding-left: 11px !important;
+		padding-right: 11px;
+	}
     /*======= Header =======*/
 	.navbar-wrapper .nav-menu ul li {
 		margin: 0;
@@ -1076,7 +1084,9 @@
 	.project-items .project-item .content {
 		padding: 55px 30px 35px;
 	}
-
+	.project-items.project-style-four .project-item {
+		height: auto;
+	}
 	.project-items.project-style-four .project-item {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
@@ -1533,5 +1543,11 @@
 
 	.image-text-block .block-content {
 		padding: 50px 30px 40px;
+	}
+}
+
+@media  screen and (min-width:1000px) {
+	.project-items.project-style-four .project-item {
+		height: 550px !important;
 	}
 }

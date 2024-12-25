@@ -1,22 +1,22 @@
-import Link from "next/dist/client/link";
-import { useEffect } from "react";
-import { stickyNav } from "../utils";
-import { Home, News, Pages, Project } from "./menus";
+import Link from 'next/dist/client/link';
+import { useEffect } from 'react';
+import { stickyNav } from '../utils';
+import { about, Home, News, Pages, Project } from './menus';
 
 const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
   useEffect(() => {
-    window.addEventListener("scroll", stickyNav);
+    window.addEventListener('scroll', stickyNav);
   });
   return (
     <header
       className={`site-header sticky-header d-none d-lg-block ${
-        transparentTop ? "topbar-transparent" : ""
-      } ${transparentHeader ? "transparent-header" : ""}`}
+        transparentTop ? 'topbar-transparent' : ''
+      } ${transparentHeader ? 'transparent-header' : ''}`}
       id="header-sticky"
     >
       <div
         className={`header-topbar d-none d-sm-block ${
-          topSecondaryBg ? "topbar-secondary-bg" : ""
+          topSecondaryBg ? 'topbar-secondary-bg' : ''
         }`}
       >
         <div className="container">
@@ -24,14 +24,14 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
             <div className="col-auto">
               <ul className="contact-info">
                 <li>
-                  <a href="#">
-                    <i className="far fa-envelope" /> support@gmail.com
+                  <a href="mailto:navratanjks@gmail.com">
+                    <i className="far fa-envelope" /> navratanjks@gmail.com
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i className="far fa-map-marker-alt" /> 250 Main Street, 2nd
-                    Floor, USA
+                    <i className="far fa-map-marker-alt" /> E-74, Sector 52,
+                    Noida, Uttar Pradesh, India
                   </a>
                 </li>
               </ul>
@@ -69,52 +69,49 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
             <div className="site-logo">
               <Link href="/">
                 <a>
-                  <img src="assets/img/logo.png" alt="Funden" />
+                  <img
+                    src="assets/img/logo.png"
+                    width={180}
+                    height={55}
+                    alt="Funden"
+                    style={{ objectFit: 'cover' }}
+                  />
                 </a>
               </Link>
             </div>
-            <div className="nav-menu" id="menu">
+            <div className="nav-menu" id="">
               <ul>
                 <li>
-                  <a href="#">
-                    Home
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/about">
+                    About Us
                     <span className="dd-trigger">
                       <i className="far fa-angle-down" />
                     </span>
                   </a>
-                  <ul className="submenu">{Home}</ul>
+                  <ul className="submenu">{about}</ul>
                 </li>
                 <li>
-                  <a href="#">
-                    Project
-                    <span className="dd-trigger">
-                      <i className="far fa-angle-down" />
-                    </span>
-                  </a>
-                  <ul className="submenu">{Project}</ul>
-                </li>
-                <li>
-                  <Link href="/events">
-                    <a>Events</a>
+                  <Link href="/projects">
+                    <a>Projects</a>
                   </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    News
-                    <span className="dd-trigger">
-                      <i className="far fa-angle-down" />
-                    </span>
-                  </a>
-                  <ul className="submenu">{News}</ul>
+                  <Link href="/get-involved">
+                    <a>Get Involved</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">
-                    Pages
-                    <span className="dd-trigger">
-                      <i className="far fa-angle-down" />
-                    </span>
-                  </a>
-                  <ul className="submenu">{Pages}</ul>
+                  <Link href="/our-initiatives">
+                    <a>Our Initiatives</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/samarpan-2024 ">
+                    <a>Samarpan 2024</a>
+                  </Link>
                 </li>
                 <li>
                   <Link href="/contact">Contact</Link>
@@ -124,7 +121,7 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
             <div className="navbar-extra d-flex align-items-center">
               <Link href="/events">
                 <a className="main-btn nav-btn d-none d-sm-inline-block">
-                  Donate Now <i className="far fa-arrow-right" />
+                  Support a Cause <i className="far fa-arrow-right" />
                 </a>
               </Link>
               <a href="#" className="nav-toggler">

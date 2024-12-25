@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Fragment } from "react";
+import Link from 'next/link';
+import { Fragment } from 'react';
 
 const Home = (
     <Fragment>
@@ -8,6 +8,22 @@ const Home = (
       </li>
       <li>
         <Link href="/index-2">Home Two</Link>
+      </li>
+    </Fragment>
+  ),
+  about = (
+    <Fragment>
+      <li>
+        <Link href="/founder">Founder’s Profile</Link>
+      </li>
+      <li>
+        <Link href="/who-we-are">WHO ARE WE</Link>
+      </li>
+      <li>
+        <Link href="/annual-report">Annual Report – 2023</Link>
+      </li>
+      <li>
+        <Link href="/pariwaar">Navratan Pariwaar</Link>
       </li>
     </Fragment>
   ),
@@ -60,4 +76,4 @@ const Home = (
     </Fragment>
   );
 
-export { Home, Project, Pages, News };
+export { Home, Project, Pages, News, about };
