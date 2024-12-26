@@ -48,3 +48,15 @@
     align-items: center;
     margin: auto;
 }
+
+.Dontate-button:hover{
+border: 1px solid var(--primary-color);
+}
+
+.quotes{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    font-weight: 600 !important;
+}
+

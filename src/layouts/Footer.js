@@ -1,27 +1,29 @@
-import Link from "next/dist/client/link";
+import Link from 'next/dist/client/link';
+import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa6';
 const Footer = ({ footerSolidBg }) => {
   return (
     <footer
       className={`site-footer ${
-        footerSolidBg ? "" : "with-footer-cta with-footer-bg"
+        footerSolidBg ? '' : 'with-footer-cta with-footer-bg'
       }`}
     >
       {!footerSolidBg && (
         <div className="footer-cta">
           <div className="container">
             <div className="row justify-content-lg-between justify-content-center align-items-center">
-              <div className="col-lg-7 col-md-8 col-sm-10">
+              <div className="col-lg-8 col-md-8 col-sm-10">
                 <span className="cta-tagline">
-                  25 Years Of Experience In Crowdfunding
+                  Together, We Empower Lives and Transform Communities
                 </span>
                 <h3 className="cta-title">
-                  Raise Hand to Promote Best Products
+                  Join Us in Building a Brighter Future for All
                 </h3>
               </div>
               <div className="col-lg-auto col-md-6">
                 <Link href="/contact">
                   <a className="main-btn bordered-btn bordered-white mt-md-30">
-                    Promote Your Products <i className="far fa-arrow-right" />
+                    Be Part of the Change <i className="far fa-arrow-right" />
                   </a>
                 </Link>
               </div>
@@ -37,65 +39,58 @@ const Footer = ({ footerSolidBg }) => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="widget about-widget">
                   <div className="footer-logo">
-                    <img src="assets/img/logo-white.png" alt="Funden" />
+                    <img src="../assets/img/logo.png" alt="Funden" />
                   </div>
                   <p>
-                    Sed ut perspiciatis unde omn iste natus error sit voluptatem
+                    Join hands to serve a purpose beyond yourself, and be the
+                    change you seek
                   </p>
                   <div className="newsletter-form">
-                    <h5 className="form-title">Join Newsletters</h5>
-                    <form onSubmit={(e) => e.preventDefault()} action="#">
-                      <input type="text" placeholder="Email Address" />
-                      <button type="submit">
-                        <i className="far fa-arrow-right" />
-                      </button>
-                    </form>
+                    <Link href="/events">
+                      <a className="main-btn nav-btn d-none d-sm-inline-block Dontate-button">
+                        Support a Cause <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col-lg-2 col-md-5 col-sm-6">
                 <div className="widget nav-widget">
-                  <h4 className="widget-title">Our Projects</h4>
+                  <h4 className="widget-title">Non Profit</h4>
                   <ul>
                     <li>
-                      <Link href="/project-1">Medical &amp; Health</Link>
+                      <Link href="/project-1">Annual Report</Link>
                     </li>
                     <li>
-                      <Link href="/project-2">Educations</Link>
+                      <Link href="/project-2">Founder's Profile</Link>
                     </li>
                     <li>
-                      <Link href="/project-1">Technology</Link>
+                      <Link href="/project-1">Executive Committee</Link>
                     </li>
                     <li>
-                      <Link href="/project-3">Web Development</Link>
-                    </li>
-                    <li>
-                      <Link href="/project-2">Food &amp; Clothes</Link>
-                    </li>
-                    <li>
-                      <Link href="/project-1">Video &amp; Movies</Link>
+                      <Link href="/project-3">Patrons</Link>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="col-lg-2 col-md-6 col-sm-6">
                 <div className="widget nav-widget">
-                  <h4 className="widget-title">Support</h4>
+                  <h4 className="widget-title">Quick Links</h4>
                   <ul>
+                    <li>
+                      <Link href="/about">About Us</Link>
+                    </li>
+                    <li>
+                      <Link href="/projects">Projects</Link>
+                    </li>
+                    <li>
+                      <Link href="/contact">Contact Us</Link>
+                    </li>
                     <li>
                       <Link href="/about">Privacy Policy</Link>
                     </li>
                     <li>
                       <Link href="/contact">Conditions</Link>
-                    </li>
-                    <li>
-                      <Link href="/company-overview">Company</Link>
-                    </li>
-                    <li>
-                      <Link href="/faq">Faq &amp; Terms</Link>
-                    </li>
-                    <li>
-                      <Link href="/contact">Contact Us</Link>
                     </li>
                   </ul>
                 </div>
@@ -110,7 +105,7 @@ const Footer = ({ footerSolidBg }) => {
                       </span>
                       <span className="info">
                         <span className="info-title">Phone Number</span>
-                        <a href="#">+012(345) 78 93</a>
+                        <Link href="tel:+917011540309">+91-7011540309</Link>
                       </span>
                     </li>
                     <li>
@@ -119,7 +114,9 @@ const Footer = ({ footerSolidBg }) => {
                       </span>
                       <span className="info">
                         <span className="info-title">Email Address</span>
-                        <a href="#">support@gmail.com</a>
+                        <Link href="mailto:navratanjks@gmail.com">
+                          navratanjks@gmail.com
+                        </Link>
                       </span>
                     </li>
                     <li>
@@ -128,7 +125,9 @@ const Footer = ({ footerSolidBg }) => {
                       </span>
                       <span className="info">
                         <span className="info-title">Locations</span>
-                        <a href="#">59 Main Street, USA</a>
+                        <a href="#">
+                          E-74, Sector 52, Noida, Uttar Pradesh, India
+                        </a>
                       </span>
                     </li>
                   </ul>
@@ -138,39 +137,35 @@ const Footer = ({ footerSolidBg }) => {
           </div>
           <div className="copyright-area">
             <div className="row flex-md-row-reverse">
-              <div className="col-md-6">
+              <div className="col-md-4">
                 <ul className="social-icons">
                   <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
+                    <a href="https://www.facebook.com/navratanfoundations">
+                      <FaFacebook />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
+                    <a href="https://www.instagram.com/navratanfoundations">
+                      <FaInstagram />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fab fa-youtube" />
+                    <a href="https://www.youtube.com/user/navjks">
+                      <FaYoutube />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <i className="fab fa-behance" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-google-plus-g" />
+                    <a href="https://www.linkedin.com/company/navratan-foundations">
+                      <FaLinkedin />
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-8">
                 <p className="copyright-text">
-                  © {new Date().getFullYear()} <a href="#">Funden</a>. All
-                  Rights Reserved
+                  © {new Date().getFullYear()} Navratan Foundation All Rights
+                  Reserved. Designed and Developed by{' '}
+                  <a href="https://www.spritegenix.com/">SpriteGenix</a>
                 </p>
               </div>
             </div>

@@ -16,14 +16,35 @@ const Home = (
       <li>
         <Link href="/founder">Founder’s Profile</Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/who-we-are">WHO ARE WE</Link>
+      </li> */}
+      <li>
+        <a
+          href="https://navratanfoundations.com/samarpan-2023.pdf"
+          target="_blank"
+        >
+          Annual Report – 2023
+        </a>
       </li>
       <li>
-        <Link href="/annual-report">Annual Report – 2023</Link>
-      </li>
-      <li>
-        <Link href="/pariwaar">Navratan Pariwaar</Link>
+        <a href="#">
+          Navratan Pariwaar
+          <span className="dd-trigger">
+            <i className="far fa-angle-down" />
+          </span>
+        </a>{' '}
+        <ul className="submenu">
+          <li>
+            <Link href="/patrons">Patrons</Link>
+          </li>
+          <li>
+            <Link href="/advisors">Advisors</Link>
+          </li>
+          <li>
+            <Link href="/executive-committee">Executive Committee</Link>
+          </li>
+        </ul>
       </li>
     </Fragment>
   ),

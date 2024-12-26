@@ -22,7 +22,7 @@ const Index = () => {
                 <h1 className="title wow fadeInUp" data-wow-delay="0.4s">
                   Unlocking Futures with Grassroots Education
                 </h1>
-                <Link href="/project-1">
+                <Link href="/projects">
                   <a className="main-btn wow fadeInUp" data-wow-delay="0.5s">
                     Explore Projects <i className="far fa-arrow-right" />
                   </a>
@@ -327,8 +327,8 @@ const Index = () => {
                         style={{ margin: '0 auto' }}
                       >
                         Empowering Underprivileged Children
-                        {/* <br />
-                        <br /> */}
+                        <br />
+                        <br />
                       </span>
                     </div>
                   </div>
@@ -353,8 +353,8 @@ const Index = () => {
                     <div className=" text-center">
                       <span className="value-title">
                         Shikshit Mahila, Unnat Rashtra
-                        {/* <br />
-                        <br /> */}
+                        <br />
+                        <br />
                       </span>
                     </div>
                   </div>
@@ -463,7 +463,7 @@ const Index = () => {
       <section className="testimonials-section section-gap">
         <div className="container">
           <div className="row " style={{ justifyContent: 'start' }}>
-            <div className="col-xl-4 col-lg-6 col-md-8 col-sm-10 ">
+            <div className="col-xl-4  col-md-10 col-sm-10 mx-auto">
               <div className="testimonials-content mb-lg-50 ">
                 <div className="common-heading mb-30">
                   {/* <span className="tagline">
@@ -756,16 +756,21 @@ const Index = () => {
             </h2>
           </div>
           <div className="row partners-logos-one">
-            <div className="col-lg-3 col-md-4 col-sm-3">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
-                    <img src="assets/img/clients/client-1.jpg" alt="Image" />
+                    <img
+                      src="assets/img/clients/client-1.jpg"
+                      alt="Image"
+                      width={100}
+                      height={100}
+                    />
                   </a>
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-3">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -774,7 +779,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -783,7 +788,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -792,7 +797,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -801,7 +806,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -810,7 +815,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -819,7 +824,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -828,7 +833,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>
@@ -837,7 +842,7 @@ const Index = () => {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
               <div className="logo mt-30">
                 <Link href="/testimonial">
                   <a>

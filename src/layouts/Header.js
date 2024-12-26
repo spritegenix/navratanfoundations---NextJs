@@ -2,7 +2,8 @@ import Link from 'next/dist/client/link';
 import { useEffect } from 'react';
 import { stickyNav } from '../utils';
 import { about, Home, News, Pages, Project } from './menus';
-
+import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa6';
 const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
   useEffect(() => {
     window.addEventListener('scroll', stickyNav);
@@ -39,23 +40,23 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
             <div className="col-auto d-none d-md-block">
               <ul className="social-icons">
                 <li>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
+                  <a href="https://www.facebook.com/navratanfoundations">
+                    <FaFacebook />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
+                  <a href="https://www.instagram.com/navratanfoundations">
+                    <FaInstagram />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-behance" />
+                  <a href="https://www.youtube.com/user/navjks">
+                    <FaYoutube />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <i className="fab fa-google-plus-g" />
+                  <a href="https://www.linkedin.com/company/navratan-foundations">
+                    <FaLinkedin />
                   </a>
                 </li>
               </ul>
@@ -70,7 +71,7 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
               <Link href="/">
                 <a>
                   <img
-                    src="assets/img/logo.png"
+                    src="../assets/img/logo.png"
                     width={180}
                     height={55}
                     alt="Funden"
@@ -109,7 +110,7 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/samarpan-2024 ">
+                  <Link href="https://navratanfoundations.com/samarpan-2023.pdf">
                     <a>Samarpan 2024</a>
                   </Link>
                 </li>
