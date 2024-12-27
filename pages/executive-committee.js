@@ -126,7 +126,7 @@ const executive = [
 const Advisors = () => {
   return (
     <Layout>
-      <PageBanner pageName="Advisors" />
+      <PageBanner pageName="Executive Committee" />
       <section className="event-area section-gap-extra-bottom">
         <div className="container">
           <div className="event-items">

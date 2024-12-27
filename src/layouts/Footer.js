@@ -10,7 +10,7 @@ const Footer = ({ footerSolidBg }) => {
     >
       {!footerSolidBg && (
         <div className="footer-cta">
-          <div className="container">
+          <div className="container" style={{ borderRadius: '2rem' }}>
             <div className="row justify-content-lg-between justify-content-center align-items-center">
               <div className="col-lg-8 col-md-8 col-sm-10">
                 <span className="cta-tagline">
@@ -39,14 +39,14 @@ const Footer = ({ footerSolidBg }) => {
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div className="widget about-widget">
                   <div className="footer-logo">
-                    <img src="../assets/img/logo.png" alt="Funden" />
+                    <img src="../assets/img/footer-logo.png" alt="Funden" />
                   </div>
                   <p>
                     Join hands to serve a purpose beyond yourself, and be the
                     change you seek
                   </p>
                   <div className="newsletter-form">
-                    <Link href="/events">
+                    <Link href="/donate">
                       <a className="main-btn nav-btn d-none d-sm-inline-block Dontate-button">
                         Support a Cause <i className="far fa-arrow-right" />
                       </a>
@@ -59,16 +59,20 @@ const Footer = ({ footerSolidBg }) => {
                   <h4 className="widget-title">Non Profit</h4>
                   <ul>
                     <li>
-                      <Link href="/project-1">Annual Report</Link>
+                      <Link href="https://navratanfoundations.com/samarpan-2023.pdf">
+                        Annual Report
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/project-2">Founder's Profile</Link>
+                      <Link href="/founder">Founder's Profile</Link>
                     </li>
                     <li>
-                      <Link href="/project-1">Executive Committee</Link>
+                      <Link href="/executive-committee">
+                        Executive Committee
+                      </Link>
                     </li>
                     <li>
-                      <Link href="/project-3">Patrons</Link>
+                      <Link href="/patrons">Patrons</Link>
                     </li>
                   </ul>
                 </div>

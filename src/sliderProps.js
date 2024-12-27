@@ -55,25 +55,25 @@ export const projectSliderOne = {
 export const projectSliderTwo = {
   infinite: true,
   dots: false,
-  arrows: true,
+  arrows: false,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 6,
   slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 6,
       },
     },
     {
-      breakpoint: 576,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 3,
         arrows: false,
       },
     },

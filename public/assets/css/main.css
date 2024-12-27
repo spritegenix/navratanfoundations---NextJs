@@ -75,13 +75,18 @@
 :root {
 	--body-color: #696969;
 	--primary-color: #fbd45a;
-	--third-color: #000;
+	--third-color: #212121;
 	--secondary-color: #00acf0;
-	--primary-soft-color: #edf9f3;
+	--primary-soft-color: #b6dceda8;
 	--white: #fff;
 	--border-color: rgb(0 29 35 / 10%);
 	--primary-font: "Roboto", sans-serif;
 	--shadows-font: "Shadows Into Light", cursive;
+	--oxpins-bdr-radius: 2rem;
+	--oxpins-black:  #212121;
+	--oxpins-primary: #00acf0;
+
+	
 }
 
 body {
@@ -1136,7 +1141,7 @@ a:hover {
 }
 
 .site-footer .footer-content-area {
-	background-color: var(--secondary-color);
+	background-color: var(--third-color);
 	padding-bottom: 30px;
 }
 
@@ -1156,7 +1161,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background-color: var(--secondary-color);
+	background-color: var(--third-color);
 	opacity: 0.9;
 }
 
@@ -1433,7 +1438,7 @@ a:hover {
 	top: 26%;
 	width: 25px;
 	height: 25px;
-	border: 5px solid #fbd45a;
+	border: 5px solid var(--oxpins-primary);
 	background-color: transparent;
 	border-radius: 50%;
 	z-index: -1;
@@ -2413,7 +2418,7 @@ a:hover {
 
 /*======= Project Details =======*/
 .project-summery {
-	padding: 0 30px 0 40px;
+	/* padding: 0 30px 0 40px; */
 }
 
 .project-summery .category {
@@ -2807,7 +2812,13 @@ a:hover {
 .counter-boxes .content.white-color .count-wrap {
 	color: var(--white);
 }
-
+.counter-boxes .icon.black-color,
+.counter-boxes .content.black-color .title,
+.counter-boxes .content.black-color .icon,
+.counter-boxes .content.black-color p,
+.counter-boxes .content.black-color .count-wrap {
+	color: var(--third-color);
+}
 /*======= Counter Section =======*/
 .counter-section-one .container {
 	position: relative;
@@ -2828,6 +2839,7 @@ a:hover {
 	z-index: -1;
 	height: 100%;
 	background-color: var(--primary-color);
+	border-radius: 2rem;
 }
 
 .counter-with-image-text-block .counter-boxes-area {
@@ -3132,6 +3144,7 @@ a:hover {
 	z-index: -1;
 	background-color: var(--secondary-color);
 	opacity: 0.9;
+	border-radius: 2rem;
 }
 
 .cta-box .main-btn {

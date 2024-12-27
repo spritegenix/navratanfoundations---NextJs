@@ -45,7 +45,7 @@ const Founder = () => {
               </div>
             </div>
           </div>
-          <div className="row align-items-center justify-content-center">
+          <div className="row align-items-center justify-content-center   mt-5 pb-5">
             <div className="col-sm-12">
               <div className="about-text mb-lg-50">
                 <p>

@@ -110,7 +110,7 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://navratanfoundations.com/samarpan-2023.pdf">
+                  <Link href="../assets/img/Samarpan-2024.pdf">
                     <a>Samarpan 2024</a>
                   </Link>
                 </li>
@@ -120,7 +120,7 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
               </ul>
             </div>
             <div className="navbar-extra d-flex align-items-center">
-              <Link href="/events">
+              <Link href="/donate">
                 <a className="main-btn nav-btn d-none d-sm-inline-block">
                   Support a Cause <i className="far fa-arrow-right" />
                 </a>

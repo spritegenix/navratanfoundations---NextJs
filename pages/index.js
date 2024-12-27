@@ -60,6 +60,7 @@ const Index = () => {
         </div>
       </section>
       {/*====== Hero Area End ======*/}
+
       {/*====== Categories Section Start ======*/}
       {/* <section className="popular-categories section-gap">
         <div className="container">
@@ -205,6 +206,7 @@ const Index = () => {
                 <img
                   src="../assets/img/about/childrens-playing.webp"
                   alt="Image"
+                  style={{ borderRadius: '2rem' }}
                 />
               </div>
             </div>
@@ -245,7 +247,7 @@ const Index = () => {
                   </ul>
                 </div>
                 <Link href="/about">
-                  <a className="main-btn mt-35">
+                  <a className="main-btn mt-35 button-center">
                     Know More <i className="far fa-arrow-right" />
                   </a>
                 </Link>
@@ -265,12 +267,84 @@ const Index = () => {
             </span>
             <h2 className="title">The projects that define us</h2>
           </div>
-          <Slider
-            {...projectSliderOne}
-            className="row project-slider-one project-items project-style-one no-shadow"
-          >
-            <div className="col">
-              <div className="project-item">
+          <div className="row project-slider-one project-items project-style-one no-shadow">
+            <div class="gallery-one__bottom">
+              <div class="gallery-one__container">
+                <ul class="list-unstyled gallery-one__list ">
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/astitva.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/astitva">Astitva</Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          A woman’s journey towards Self-Empowerment
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/gyanpeeth.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/gyanpeeth">
+                            Navratan Gyanpeeth
+                          </Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          Empowering Underprivileged Children
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/umeed.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/umeed">Umeed</Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          Shikshit Mahila, Unnat Rashtra
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/cyberurja.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/cyberurja">CYBERURJA</Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          A woman’s journey towards Self-Empowerment
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              {/* <div className="project-item">
                 <div
                   className="thumb"
                   style={{
@@ -280,11 +354,8 @@ const Index = () => {
                 <div className="content">
                   {/* <div className="cats">
                     <Link href="/project-1">Video &amp; Movies</Link>
-                  </div> */}
-                  {/* <div className="author">
-                    <img src="assets/img/author-thumbs/01.jpg" alt="Thumb" />
-                    <Link href="/project-1">James W. Barrows</Link>
-                  </div> */}
+                  </div> 
+                 
                   <h5 className="title text-center ">
                     <Link href="/project-details">
                       <a className="font-size-xl">Astitva</a>
@@ -296,17 +367,13 @@ const Index = () => {
                         A woman’s journey towards Self-Empowerment
                       </span>
                     </div>
-                    {/* <div className="stats-bar" data-value={79}>
-                      <div className="bar-line" />
-                    </div> */}
+                 
                   </div>
-                  {/* <span className="date">
-                    <i className="far fa-calendar-alt" /> 25 February 2021
-                  </span> */}
+              
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="col">
+            {/* <div className="col">
               <div className="project-item">
                 <div
                   className="thumb"
@@ -387,21 +454,21 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </Slider>
+            </div> */}
+          </div>
         </div>
       </section>
       {/*====== Project Section End ======*/}
       {/*====== Counter Area Start ======*/}
       <section className="counter-section-one mt-negative">
-        <div className="container primary-bg">
+        <div className="container primary-bg border-radius">
           <div className="row counter-boxes justify-content-xl-between justify-content-center">
             <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
               <div className="counter-box mb-40 icon-left">
-                <div className="icon white-color">
+                <div className="icon black-color">
                   <img src="../assets/img/home/ngo.png" alt="NGO" />
                 </div>
-                <div className="content white-color">
+                <div className="content black-color">
                   <div className="count-wrap">
                     <Counter end={21} />
                     {/* <span className="suffix">+</span> */}
@@ -412,10 +479,10 @@ const Index = () => {
             </div>
             <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
               <div className="counter-box mb-40 icon-left">
-                <div className="icon white-color">
+                <div className="icon black-color">
                   <img src="../assets/img/home/budget.png" alt="budget" />
                 </div>
-                <div className="content white-color">
+                <div className="content black-color">
                   <div className="count-wrap">
                     <Counter end={27} />
                     <span className="suffix">+</span>
@@ -426,10 +493,10 @@ const Index = () => {
             </div>
             <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
               <div className="counter-box mb-40 icon-left">
-                <div className="icon white-color">
+                <div className="icon black-color">
                   <img src="../assets/img/home/volunteer.png" alt="volunteer" />
                 </div>
-                <div className="content white-color">
+                <div className="content black-color">
                   <div className="count-wrap">
                     <Counter end={45} />
                     <span className="suffix">+</span>
@@ -440,13 +507,13 @@ const Index = () => {
             </div>
             <div className="col-xl-auto col-lg-5 col-md-5 col-sm-6">
               <div className="counter-box mb-40 icon-left">
-                <div className="icon white-color">
+                <div className="icon black-color">
                   <img
                     src="../assets/img/home/commitment.png"
                     alt="CSR Partnerships"
                   />
                 </div>
-                <div className="content white-color">
+                <div className="content black-color">
                   <div className="count-wrap">
                     <Counter end={12} />
                     {/* <span className="suffix">+</span> */}
@@ -462,7 +529,7 @@ const Index = () => {
       {/*====== Testimonials Start ======*/}
       <section className="testimonials-section section-gap">
         <div className="container">
-          <div className="row " style={{ justifyContent: 'start' }}>
+          <div className="row " style={{ justifyContent: 'center' }}>
             <div className="col-xl-4  col-md-10 col-sm-10 mx-auto">
               <div className="testimonials-content mb-lg-50 ">
                 <div className="common-heading mb-30">
@@ -645,7 +712,10 @@ const Index = () => {
           {/* Call to Action */}
           <div
             className="cta-box cta-double-content"
-            style={{ backgroundImage: 'url(assets/img/home/childrens.webp)' }}
+            style={{
+              backgroundImage: 'url(assets/img/home/childrens.webp)',
+              borderRadius: '2rem',
+            }}
           >
             <div className="row justify-content-center">
               <div className="col-xl-12 col-lg-12 col-md-12">
@@ -704,6 +774,7 @@ const Index = () => {
                     className="thumb"
                     style={{
                       backgroundImage: 'url(assets/img/awards/awards-1.jpg)',
+                      borderRadius: '2rem',
                     }}
                   />
                 </div>
@@ -714,6 +785,7 @@ const Index = () => {
                     className="thumb"
                     style={{
                       backgroundImage: 'url(assets/img/awards/awards-2.jpg)',
+                      borderRadius: '2rem',
                     }}
                   />
                 </div>
@@ -724,6 +796,7 @@ const Index = () => {
                     className="thumb"
                     style={{
                       backgroundImage: 'url(assets/img/awards/awards-3.jpg)',
+                      borderRadius: '2rem',
                     }}
                   />
                 </div>
@@ -734,6 +807,7 @@ const Index = () => {
                     className="thumb"
                     style={{
                       backgroundImage: 'url(assets/img/awards/awards-4.jpg)',
+                      borderRadius: '2rem',
                     }}
                   />
                 </div>
@@ -744,7 +818,7 @@ const Index = () => {
       </section>
       {/*====== Emergency Project & CTA End ======*/}
       {/*====== Partners Section Start ======*/}
-      <section className="partners-section section-gap section-border-bottom">
+      <section className="partners-section section-gap pb-0">
         <div className="container">
           <div className="common-heading mb-30">
             <span className="tagline">
@@ -755,106 +829,130 @@ const Index = () => {
               CHANGING LIVES TOGETHER: Our Partners in Progress
             </h2>
           </div>
-          <div className="row partners-logos-one">
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+          {/* <div className="row partners-logos-one"> */}
+          <Slider {...projectSliderTwo} className="row partners-logos-one ">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client ">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img
-                      src="assets/img/clients/client-1.jpg"
-                      alt="Image"
-                      width={100}
-                      height={100}
-                    />
-                  </a>
-                </Link>
+                <a>
+                  <img
+                    src="assets/img/clients/client-1.jpg"
+                    alt="Image"
+                    width={100}
+                    height={100}
+                  />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-2.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-2.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-3.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-3.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-4.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-4.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-5.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-5.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-6.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-6.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-7.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-7.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-8.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-8.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-9.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-9.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-6 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-10.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-10.jpg" alt="Image" />
+                </a>
+              </div>
+            </div>
+          </Slider>
+        </div>
+        {/* </div> */}
+      </section>
+      {/*====== Partners Section End ======*/}
+
+      <section className="events-one">
+        <div className="events-one-shape-1"></div>
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xl-4 col-lg-4 col-md-6  mx-auto">
+              <img src="assets/img/social-emotional.png" width="100%" />
+            </div>
+            <div className="col-xl-8 col-lg-8">
+              <div className="about-one__right">
+                <div className="section-title text-left">
+                  <h2 className="section-title__title">
+                    Social Emotional Reach Programme
+                  </h2>
+                </div>
+                <p className="about-one__text">
+                  Social-emotional development and support should become an
+                  essential piece and mainstay of our lives. Education and
+                  awareness around it should flow smoothly to establish the
+                  framework for positive social associations, bringing about
+                  effective positive mental health in the community. Youths and
+                  the old, being the most vulnerable sections of society need
+                  our helping hands and gracious charity to curb their
+                  psychological barriers and break their opinionated silence. To
+                  settle themselves they need to be counseled well and a Social
+                  Emotional Reach campaign makes it easy to reach out to such
+                  individuals. We have collaborated with DayaRani Wellness
+                  Advisory.
+                </p>
+                <br />
+                <a
+                  className="main-btn"
+                  href="https://dayarani.in/"
+                  target="_blank"
+                >
+                  Discover More <i className="far fa-arrow-right" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*====== Partners Section End ======*/}
       {/*====== Latest News Start ======*/}
       <section className="latest-blog-section section-gap">
         <div className="container">

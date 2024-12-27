@@ -1,6 +1,6 @@
-import Link from "next/dist/client/link";
-import PageBanner from "../src/components/PageBanner";
-import Layout from "../src/layouts/Layout";
+import Link from 'next/dist/client/link';
+import PageBanner from '../src/components/PageBanner';
+import Layout from '../src/layouts/Layout';
 
 const Contact = () => {
   return (
@@ -14,21 +14,29 @@ const Contact = () => {
               <div className="contact-info-text mb-md-70">
                 <div className="common-heading mb-30">
                   <span className="tagline">
-                    <i className="fas fa-plus" /> Donate Projects
-                    <span className="heading-shadow-text">Donate</span>
+                    <i className="fas fa-plus" />
+                    Contact
+                    <span className="heading-shadow-text">Contact Us</span>
                   </span>
-                  <h2 className="title">Ready to Get More Information</h2>
+                  <h2 className="title">
+                    Connect with Navratan Foundations for Change
+                  </h2>
                 </div>
                 <p>
-                  Sedut perspiciatis unde omnis natus voluptatem accusantium
-                  dolore dantiumy totam apeam eaquey quaventore veritatis
-                  architecto beatae.
+                  {' '}
+                  Every step toward change begins with a connection. At Navratan
+                  Foundations, we believe in the power of unity and compassion
+                  to transform lives. Whether you seek help, want to contribute,
+                  or simply share your story, we are here to listen and stand by
+                  you. Together, let’s build a future filled with hope, dignity,
+                  and endless possibilities. Reach out to us — your voice
+                  matters.{' '}
                 </p>
-                <Link href="/events">
+                {/* <Link href="/events">
                   <a className="main-btn mt-35">
                     Get Free Quote <i className="far fa-arrow-right" />
                   </a>
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="col-xl-6 col-lg-7 offset-xl-1">
@@ -44,7 +52,7 @@ const Contact = () => {
                       </div>
                       <div className="info-content">
                         <h5>Our Location</h5>
-                        <p>5075 Main Road, D- Block, 2nd Floor, New York</p>
+                        <p>E-74, Sector 52, Noida, Uttar Pradesh, India</p>
                       </div>
                     </div>
                     <div
@@ -56,10 +64,12 @@ const Contact = () => {
                       </div>
                       <div className="info-content">
                         <h5>Email Address</h5>
-                        <p>
-                          supportinfo@gmail.com <br />
-                          www.funden.com
-                        </p>
+                        <a
+                          href="mailto:navratanjks@gmail.com"
+                          style={{ color: 'black' }}
+                        >
+                          navratanjks@gmail.com
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -72,11 +82,10 @@ const Contact = () => {
                         <i className="flaticon-phone-call-1" />
                       </div>
                       <div className="info-content">
-                        <h5>Support 24/7</h5>
-                        <p>
-                          +012 (345) 689 37 <br />
-                          012345687
-                        </p>
+                        <h5>Contact Number</h5>
+                        <a href="tel:+917011540309" style={{ color: 'black' }}>
+                          +91-7011540309
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -90,7 +99,7 @@ const Contact = () => {
               <div className="col-lg-5">
                 <div className="contact-maps">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48372.81123152747!2d-73.96448279177292!3d40.733408396164116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1627206548218!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56057.95833592886!2d77.27645736219122!3d28.581099550066043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5821045f981%3A0x9301bbf1c0eb7aeb!2sNavratan%20Foundations!5e0!3m2!1sen!2sin!4v1699076587199!5m2!1sen!2sin"
                     loading="lazy"
                   />
                 </div>
@@ -105,7 +114,7 @@ const Contact = () => {
                           <label htmlFor="name">Your Name</label>
                           <input
                             type="text"
-                            placeholder="Willie M. Stanley"
+                            placeholder="Your Name"
                             id="name"
                           />
                         </div>
@@ -115,7 +124,7 @@ const Contact = () => {
                           <label htmlFor="phone-number">Phone Number</label>
                           <input
                             type="text"
-                            placeholder="Willie M. Stanley"
+                            placeholder="Your Phone Number"
                             id="phone-number"
                           />
                         </div>
@@ -125,7 +134,7 @@ const Contact = () => {
                           <label htmlFor="email">Email Address</label>
                           <input
                             type="text"
-                            placeholder="support@gmail.com"
+                            placeholder="Your Email"
                             id="email"
                           />
                         </div>
@@ -135,7 +144,7 @@ const Contact = () => {
                           <label htmlFor="subject">Subject</label>
                           <input
                             type="text"
-                            placeholder="I would like to"
+                            placeholder="Subject"
                             id="subject"
                           />
                         </div>
@@ -145,8 +154,8 @@ const Contact = () => {
                           <label htmlFor="message">Write Message</label>
                           <textarea
                             id="message"
-                            placeholder="Hello"
-                            defaultValue={""}
+                            placeholder="Write us a Message"
+                            defaultValue={''}
                           />
                         </div>
                       </div>

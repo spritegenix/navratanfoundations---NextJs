@@ -181,16 +181,16 @@ export async function getStaticPaths() {
 const ProjectDetails = () => {
   const router = useRouter();
   const { id } = router.query;
-  console.log(id);
   const filterData = projectData.filter((item) => item.url === id);
-  console.log('filtereddata', filterData);
+  const capitalName =
+    filterData[0].url.charAt(0).toUpperCase() + filterData[0].url.slice(1);
   return (
     <Layout>
-      <PageBanner pageName="Project Details" />
-      <section className="project-details-area section-gap-extra-bottom">
+      <PageBanner pageName={capitalName} />
+      <section className="project-details-area section-gap-extra-bottom pt-0">
         <div className="container">
           <h2
-            className="row project-title align-items-center justify-content-center pb-4"
+            className="row project-title align-items-center justify-content-center p-4"
             style={{ fontSize: '4rem' }}
           >
             {filterData[0].title}
@@ -232,8 +232,8 @@ const ProjectDetails = () => {
                   role="tabpanel"
                 >
                   <div className="row justify-content-center">
-                    <div className="col-lg-6 p-0 m-0">
-                      <div className="description-content p-0 m-0">
+                    <div className="col-lg-5 p-0 m-0">
+                      <div className="description-content p-0 pb-5 m-0">
                         <h6>{filterData[0].subHeading}</h6>
                         <br />
                         <p>{filterData[0].longTermGoal[0].text}</p>
@@ -246,7 +246,7 @@ const ProjectDetails = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="col-xl-6 col-lg-6 col-md-10">
+                    <div className="col-xl-7 col-lg-7 col-md-10">
                       <div className="about-gallery wow fadeInRight">
                         <div className="img-one">
                           <img

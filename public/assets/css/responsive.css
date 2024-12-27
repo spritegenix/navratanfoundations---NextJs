@@ -416,6 +416,10 @@
 		flex: 0 0 100%;
 		width: 100%;
 	}
+	.gallery-one__list {
+	
+		flex-wrap: wrap;
+	  }
 }
 
 /*=======  Large devices (desktops, 992px and up) =======*/

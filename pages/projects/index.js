@@ -6,11 +6,86 @@ const Project1 = () => {
   return (
     <Layout>
       <PageBanner pageName="Our Projects" />
-      <section className="project-section section-gap-extra-bottom primary-soft-bg">
-        <div className="container">
+      <section className="project-section section-gap-extra-bottom  pt-5 primary-soft-bg">
+        <div className="p-5">
           <div className="row project-items justify-content-center project-style-one">
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div className="project-item mb-30">
+            <div class="gallery-one__bottom">
+              <div class="gallery-one__container">
+                <ul class="list-unstyled gallery-one__list ">
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/astitva.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/astitva">Astitva</Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          A woman’s journey towards Self-Empowerment
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/gyanpeeth.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/gyanpeeth">
+                            Navratan Gyanpeeth
+                          </Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          Empowering Underprivileged Children
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/umeed.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/umeed">Umeed</Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          Shikshit Mahila, Unnat Rashtra
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li
+                    class="gallery-one__single wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div class="gallery-one__img">
+                      <img src="assets/img/project/cyberurja.webp" alt="" />
+                      <div class="gallery-one__content">
+                        <h5 class="gallery-one__title">
+                          <Link href="/projects/cyberurja">CYBERURJA</Link>
+                        </h5>
+                        <p class="gallery-one__sub-title">
+                          {' '}
+                          A woman’s journey towards Self-Empowerment
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              {/* <div className="project-item">
                 <div
                   className="thumb"
                   style={{
@@ -20,13 +95,10 @@ const Project1 = () => {
                 <div className="content">
                   {/* <div className="cats">
                     <Link href="/project-1">Video &amp; Movies</Link>
-                  </div> */}
-                  {/* <div className="author">
-                    <img src="assets/img/author-thumbs/01.jpg" alt="Thumb" />
-                    <Link href="/project-1">James W. Barrows</Link>
-                  </div> */}
+                  </div> 
+                 
                   <h5 className="title text-center ">
-                    <Link href="/projects/astitva">
+                    <Link href="/project-details">
                       <a className="font-size-xl">Astitva</a>
                     </Link>
                   </h5>
@@ -36,97 +108,11 @@ const Project1 = () => {
                         A woman’s journey towards Self-Empowerment
                       </span>
                     </div>
-                    {/* <div className="stats-bar" data-value={79}>
-                      <div className="bar-line" />
-                    </div> */}
+                 
                   </div>
-                  {/* <span className="date">
-                    <i className="far fa-calendar-alt" /> 25 February 2021
-                  </span> */}
+              
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div className="project-item mb-30">
-                <div
-                  className="thumb"
-                  style={{
-                    backgroundImage: 'url(assets/img/project/gyanpeeth.webp)',
-                  }}
-                />
-                <div className="content">
-                  <h5 className="title text-center">
-                    <Link href="/projects/gyanpeeth">
-                      <a className="font-size-xl">Navratan Gyanpeeth</a>
-                    </Link>
-                  </h5>
-                  <div className="project-stats">
-                    <div className="stats-value text-center">
-                      <span
-                        className="value-title"
-                        style={{ margin: '0 auto' }}
-                      >
-                        Empowering Underprivileged Children
-                        <br />
-                        <br />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div className="project-item mb-30">
-                <div
-                  className="thumb"
-                  style={{
-                    backgroundImage: 'url(assets/img/project/umeed.webp)',
-                  }}
-                />
-                <div className="content">
-                  <h5 className="title text-center">
-                    <Link href="/projects/umeed">
-                      <a className="font-size-xl">Umeed</a>
-                    </Link>
-                  </h5>
-                  <div className="project-stats">
-                    <div className=" text-center">
-                      <span className="value-title">
-                        Shikshit Mahila, Unnat Rashtra
-                        <br />
-                        <br />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10">
-              <div className="project-item mb-30">
-                <div
-                  className="thumb"
-                  style={{
-                    backgroundImage: 'url(assets/img/project/cyberurja.webp)',
-                  }}
-                />
-                <div className="content">
-                  <h5 className="title text-center">
-                    <Link href="/projects/cyberurja">
-                      <a className="font-size-xl">CYBERURJA</a>
-                    </Link>
-                  </h5>
-                  <div className="project-stats">
-                    <div className="stats-value text-center">
-                      <span
-                        className="value-title"
-                        style={{ margin: '0 auto' }}
-                      >
-                        Empowering with Computer Education
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

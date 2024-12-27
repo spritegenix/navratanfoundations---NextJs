@@ -5,7 +5,7 @@ import Counter from '../src/components/Counter';
 import PageBanner from '../src/components/PageBanner';
 import VideoPopup from '../src/components/VideoPopup';
 import Layout from '../src/layouts/Layout';
-import { teamSlider } from '../src/sliderProps';
+import { projectSliderTwo, teamSlider } from '../src/sliderProps';
 
 const About = () => {
   const [video, setVideo] = useState(false);
@@ -13,7 +13,7 @@ const About = () => {
     <Layout>
       {video && <VideoPopup close={setVideo} />}
       <PageBanner pageName="About Us" />
-      <section className="about-section-three section-gap">
+      <section className="about-section-three section-gap pb-3">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-xl-5 col-lg-7 col-md-9 col-sm-10">
@@ -609,7 +609,7 @@ const About = () => {
               <div className="col-xl-auto col-lg-3 col-md-6 col-sm-8">
                 <div className="counter-box mb-60">
                   <div className="icon">
-                    <img src="../assets/img/home/ngo.png" alt="NGO" />
+                    <img src="../assets/img/home/ngo-w.png" alt="NGO" />
                   </div>
                   <div className="content white-color">
                     <div className="count-wrap">
@@ -624,7 +624,7 @@ const About = () => {
               <div className="col-xl-auto col-lg-3 col-md-6 col-sm-8">
                 <div className="counter-box mb-60">
                   <div className="icon">
-                    <img src="../assets/img/home/budget.png" alt="budget" />
+                    <img src="../assets/img/home/budget-w.png" alt="budget" />
                   </div>
                   <div className="content white-color">
                     <div className="count-wrap">
@@ -643,7 +643,7 @@ const About = () => {
                 <div className="counter-box mb-60">
                   <div className="icon">
                     <img
-                      src="../assets/img/home/volunteer.png"
+                      src="../assets/img/home/volunteer-w.png"
                       alt="volunteer"
                     />
                   </div>
@@ -661,7 +661,7 @@ const About = () => {
                 <div className="counter-box mb-60">
                   <div className="icon">
                     <img
-                      src="../assets/img/home/commitment.png"
+                      src="../assets/img/home/commitment-w.png"
                       alt="CSR Partnerships"
                     />
                   </div>
@@ -680,7 +680,7 @@ const About = () => {
         </div>
       </section>
       {/*====== Counter With Image Text Block End ======*/}
-      <section className="about-section-three section-gap">
+      <section className="about-section-three p-md-5">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-sm-12">
@@ -1005,7 +1005,7 @@ const About = () => {
       {/*====== Testimonials End ======*/}
       {/*====== Partners Section With CTA Start ======*/}
       {/*====== Partners Section Start ======*/}
-      <section className="partners-section section-gap pb-80 mb-80 section-border-bottom">
+      <section className="partners-section section-gap pt-0 pt-md-80 pb-80 mb-80 section-border-bottom">
         <div className="container mb-30">
           <div className="common-heading mb-30">
             <span className="tagline">
@@ -1016,103 +1016,84 @@ const About = () => {
               CHANGING LIVES TOGETHER: Our Partners in Progress
             </h2>
           </div>
-          <div className="row partners-logos-one">
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+
+          <Slider {...projectSliderTwo} className="row partners-logos-one ">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img
-                      src="assets/img/clients/client-1.jpg"
-                      alt="Image"
-                      width={100}
-                      height={100}
-                    />
-                  </a>
-                </Link>
+                <a>
+                  <img
+                    src="assets/img/clients/client-1.jpg"
+                    alt="Image"
+                    width={100}
+                    height={100}
+                  />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-2.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-2.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-3.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-3.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-4.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-4.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-5.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-5.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-6.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-6.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-7.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-7.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-8.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-8.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-9.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-9.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-            <div className="col-lg-3 col-md-3 col-sm-6 logo-client">
+            <div className="col-lg-3 col-md-8 col-sm-6 logo-client">
               <div className="logo mt-30">
-                <Link href="/testimonial">
-                  <a>
-                    <img src="assets/img/clients/client-10.jpg" alt="Image" />
-                  </a>
-                </Link>
+                <a>
+                  <img src="assets/img/clients/client-10.jpg" alt="Image" />
+                </a>
               </div>
             </div>
-          </div>
+          </Slider>
         </div>
       </section>
       {/*====== Partners Section End ======*/}
