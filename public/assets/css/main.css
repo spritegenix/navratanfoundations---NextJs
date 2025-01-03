@@ -3650,19 +3650,20 @@ a:hover {
 
 /*======= Pricing =======*/
 .pricing-box {
-	padding: 55px;
+	padding: 25px;
 	background-color: var(--white);
 	position: relative;
 	z-index: 1;
 	-webkit-transition: 0.4s;
 	-o-transition: 0.4s;
 	transition: 0.4s;
+	border-radius: 2rem;
 }
 
 .pricing-box .plan-name {
-	font-size: 15px;
-	letter-spacing: 4px;
-	color: var(--primary-color);
+	font-size: 18px;
+	letter-spacing: 1px;
+	/* color: var(--primary-color); */
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	-webkit-transition: 0.3s;
@@ -3749,7 +3750,7 @@ a:hover {
 
 .pricing-box .plan-shape {
 	position: absolute;
-	top: 0;
+	top: 4rem;
 	left: 0;
 	width: 100%;
 	text-align: center;
@@ -3790,12 +3791,12 @@ a:hover {
 .pricing-box.featured-plan .plan-subtitle,
 .pricing-box.featured-plan .plan-feature li,
 .pricing-box.featured-plan .plan-feature li i {
-	color: var(--white);
+	color: var(--secondary-color);
 }
 
 .pricing-box:hover .plan-feature li.hidden-feature,
 .pricing-box.featured-plan .plan-feature li.hidden-feature {
-	opacity: 0.4;
+	opacity: 0.9;
 }
 
 .pricing-box:hover .pricing-btn,
@@ -3810,36 +3811,59 @@ a:hover {
 }
 
 /*======= Event Items =======*/
+.event-items{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 5rem;
+	justify-content: center;
+	align-items: center;
+
+}
 .event-items .single-event-item {
 	position: relative;
 	z-index: 1;
 	background-color: var(--white);
 	-webkit-box-shadow: 0px 30px 60px 0px rgba(0, 29, 35, 0.07);
 	box-shadow: 0px 30px 60px 0px rgba(0, 29, 35, 0.07);
-	padding: 40px 70px;
+	padding: 2rem !important;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-direction: column;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	border: 2px solid var(--oxpins-primary);
+	height: 500px;
+	margin-bottom: 100px;
+	text-overflow: ellipsis;
 }
 
 .event-items .single-event-item .event-thumb {
 	width: 155px;
-	-webkit-box-flex: 0;
+	position: relative;
+	top: -110px;
+	/* -webkit-box-flex: 0;
 	-ms-flex: 0 0 155px;
-	flex: 0 0 155px;
+	flex: 0 0 155px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .event-items .single-event-item .event-thumb img {
-	width: 155px;
-	height: 155px;
-	border-radius: 50%;
-}
+	width: 100%;
+	height: 100%;
+	}
 
 .event-items .single-event-item .event-content {
-	padding: 0 120px 0 75px;
+	position: relative;
+	top: -130px;
+	padding: 0 !important;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
 }
 
 .event-items .single-event-item .meta {
@@ -3851,6 +3875,7 @@ a:hover {
 	align-items: center;
 	margin-bottom: 20px;
 	line-height: 1;
+
 }
 
 .event-items .single-event-item .meta li:not(:last-child) {

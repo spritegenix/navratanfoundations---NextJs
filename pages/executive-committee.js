@@ -56,7 +56,7 @@ const executive = [
     role: 'Treasurer',
     image: '/assets/img/executive/anuranjan-srivastava-150x150-1.png',
     description:
-      'Anuranjan Srivastava is an entrepreneur social worker, result oriented professional and a successful leader with over 15 years of achievement packed experience of conceptualizing and building few successful businesses in IT, Publishing and Education domain. He is committed towards social cause especially spread of technical & vocational education for rural & underprivileged youth. He founded a new company– “Skilled ME” providing Skill Training program and complete digital solution from learning digitization, Branding and market communication website management including social media integration to e commerce portal, Mobile App etc.',
+      'Anuranjan Srivastava is an entrepreneur social worker, result oriented professional and a successful leader with over 15 years of achievement packed experience of conceptualizing and building few successful businesses in IT, Publishing and Education domain. He is committed towards social cause especially spread of technical & vocational education for rural & underprivileged youth. He founded a new company– “Skilled ME” providing Skill Training program and complete digital solution from learning digitization, Branding and market communication website management including social media integration to e commerce portal etc.',
   },
   {
     name: 'A.V. Murlidharan',
@@ -129,10 +129,11 @@ const Advisors = () => {
       <PageBanner pageName="Executive Committee" />
       <section className="event-area section-gap-extra-bottom">
         <div className="container">
-          <div className="event-items">
+          <div className="event-items ">
             {executive.map((patron) => (
               <div
-                className="single-event-item mb-30 wow fadeInUp"
+                className="single-event-item mb-30 wow fadeInUp col-xl-4 col-lg-5 col-md-8"
+                style={{ gap: '2rem', height: '600px' }}
                 data-wow-delay="0.1s"
               >
                 <div className="event-thumb">
@@ -147,7 +148,7 @@ const Advisors = () => {
                       paddingBottom: '3px',
                     }}
                   >
-                    {patron.role}
+                    {patron.designation}
                   </p>
                   <p>{patron.description}</p>
                 </div>

@@ -954,7 +954,7 @@ const Index = () => {
         </div>
       </section>
       {/*====== Latest News Start ======*/}
-      <section className="latest-blog-section section-gap">
+      <section className="latest-blog-section section-gap pt-0">
         <div className="container">
           <div className="common-heading text-center mb-30">
             <span className="tagline">

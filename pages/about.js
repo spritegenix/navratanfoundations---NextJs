@@ -16,7 +16,7 @@ const About = () => {
       <section className="about-section-three section-gap pb-3">
         <div className="container">
           <div className="row align-items-center justify-content-center">
-            <div className="col-xl-5 col-lg-7 col-md-9 col-sm-10">
+            <div className="col-sm-12 col-md-9  col-xl-5 col-lg-12 ">
               <div className="about-text mb-lg-50">
                 <div className="common-heading mb-30">
                   <span className="tagline">
@@ -1005,7 +1005,7 @@ const About = () => {
       {/*====== Testimonials End ======*/}
       {/*====== Partners Section With CTA Start ======*/}
       {/*====== Partners Section Start ======*/}
-      <section className="partners-section section-gap pt-0 pt-md-80 pb-80 mb-80 section-border-bottom">
+      <section className="partners-section section-gap pt-0 pt-md-80 pb-80 mb-80">
         <div className="container mb-30">
           <div className="common-heading mb-30">
             <span className="tagline">

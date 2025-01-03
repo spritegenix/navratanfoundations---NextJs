@@ -190,8 +190,8 @@ const ProjectDetails = () => {
       <section className="project-details-area section-gap-extra-bottom pt-0">
         <div className="container">
           <h2
-            className="row project-title align-items-center justify-content-center p-4"
-            style={{ fontSize: '4rem' }}
+            className="row project-title align-items-center justify-content-center p-4 project-titles"
+            style={{ fontSize: '3rem' }}
           >
             {filterData[0].title}
           </h2>

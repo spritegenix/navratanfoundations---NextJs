@@ -73,10 +73,11 @@ const Patrons = () => {
       <PageBanner pageName="Patrons" />
       <section className="event-area section-gap-extra-bottom">
         <div className="container">
-          <div className="event-items">
+          <div className="event-items ">
             {patrons.map((patron) => (
               <div
-                className="single-event-item mb-30 wow fadeInUp"
+                className="single-event-item mb-30 wow fadeInUp col-xl-4 col-lg-5 col-md-8"
+                style={{ gap: '2rem' }}
                 data-wow-delay="0.1s"
               >
                 <div className="event-thumb">

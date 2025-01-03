@@ -3,6 +3,7 @@ import { useState } from 'react';
 import PageBanner from '../src/components/PageBanner';
 import VideoPopup from '../src/components/VideoPopup';
 import Layout from '../src/layouts/Layout';
+import Cards from '../src/components/Cards';
 
 const CompanyOverview = () => {
   const [video, setVideo] = useState(false);
@@ -52,8 +53,8 @@ const CompanyOverview = () => {
         </div>
       </section>
       {/*====== About Section End ======*/}
-
-      <section className="feature-section  feature-section-one section-gap pt-0">
+      <Cards />
+      {/* <section className="feature-section  feature-section-one section-gap pt-0">
         <div className="container">
           <div className="row  justify-content-center align-items-center">
             <div
@@ -119,7 +120,7 @@ const CompanyOverview = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   );
 };
