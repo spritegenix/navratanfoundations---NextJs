@@ -121,7 +121,10 @@ const Header = ({ transparentTop, transparentHeader, topSecondaryBg }) => {
             </div>
             <div className="navbar-extra d-flex align-items-center">
               <Link href="/donate">
-                <a className="main-btn nav-btn d-none d-sm-inline-block">
+                <a
+                  className="main-btn nav-btn d-none d-sm-inline-block"
+                  style={{ color: '#212121' }}
+                >
                   Support a Cause <i className="far fa-arrow-right" />
                 </a>
               </Link>

@@ -50,30 +50,21 @@ const Advisors = () => {
   return (
     <Layout>
       <PageBanner pageName="Advisors" />
-      <section className="event-area section-gap-extra-bottom">
+      <section className="advisors-section">
         <div className="container">
-          <div className="event-items advisors">
-            {advisors.map((patron) => (
+          <div className="advisors-container">
+            {advisors.map((advisor, index) => (
               <div
-                className="single-event-item mb-30 wow fadeInUp col-xl-4 col-lg-5 col-md-8"
-                style={{ gap: '2rem', height: '400px' }}
-                data-wow-delay="0.1s"
+                className={`advisor-card ${index === 0 ? 'first-advisor' : ''}`}
+                key={index}
               >
-                <div className="event-thumb">
-                  <img src={patron.image} alt="Image" />
+                <div className="advisor-thumb">
+                  <img src={advisor.image} alt={advisor.name} />
                 </div>
-                <div className="event-content pr-0">
-                  <h4 className="event-title">{patron.name}</h4>
-                  <p
-                    style={{
-                      fontWeight: '600',
-                      fontSize: '1.2rem',
-                      paddingBottom: '3px',
-                    }}
-                  >
-                    {patron.designation}
-                  </p>
-                  <p>{patron.description}</p>
+                <div className="advisor-content">
+                  <h4 className="advisor-name">{advisor.name}</h4>
+                  <p className="advisor-designation">{advisor.designation}</p>
+                  <p className="advisor-description">{advisor.description}</p>
                 </div>
               </div>
             ))}

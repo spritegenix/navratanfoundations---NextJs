@@ -1,12 +1,16 @@
-import Link from 'next/dist/client/link';
 import Slider from 'react-slick';
 import Counter from '../src/components/Counter';
 import Layout from '../src/layouts/Layout';
+import Typewriter from 'typewriter-effect';
+
 import {
   imageTextBlockSlider,
   projectSliderOne,
   projectSliderTwo,
 } from '../src/sliderProps';
+import Link from 'next/link';
+import { FaHandsHelping, FaUser, FaUsers } from 'react-icons/fa';
+import ProjectsGallery from '../src/components/ProjectsCard';
 
 const Index = () => {
   return (
@@ -20,7 +24,18 @@ const Index = () => {
                   Crowdfounding Agency
                 </span> */}
                 <h1 className="title wow fadeInUp" data-wow-delay="0.4s">
-                  Unlocking Futures with Grassroots Education
+                  <Typewriter
+                    options={{
+                      strings: [
+                        'Unlocking Futures with Grassroots Education',
+                        'Empowering Communities Through Learning',
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      delay: 90, // Typing speed
+                      cursor: '', // Custom cursor
+                    }}
+                  />
                 </h1>
                 <Link href="/projects">
                   <a className="main-btn wow fadeInUp" data-wow-delay="0.5s">
@@ -215,9 +230,9 @@ const Index = () => {
                 <div className="common-heading mb-30">
                   <span className="tagline">
                     <i className="fas fa-plus" /> who we are
-                    <span className="heading-shadow-text">Abouit Us</span>
+                    <span className="heading-shadow-text">About Us</span>
                   </span>
-                  <h2 className="title">
+                  <h2 className="">
                     If you light a lamp for Somebody, it will also brighten your
                     path -Buddha
                   </h2>
@@ -231,19 +246,25 @@ const Index = () => {
                   resources to those in need.
                 </p>
                 <div className="author-note wow fadeInUp">
-                  <ul className="flex text-center">
-                    <li className="flex-1">
-                      <h5>Join Our Team</h5>
-                      <p className="font-size-sm font-weight-medium">
-                        Explore opportunities to work for Navratan Foundations
-                      </p>
-                    </li>
-                    <li className="flex-1">
-                      <h5>Start Contributing</h5>
-                      <p className="font-size-sm font-weight-medium">
-                        Support the cause and make a difference
-                      </p>
-                    </li>
+                  <ul className="teamflex text-center">
+                    <Link href={'/contact'} className="">
+                      <li className="flex-1 cursor-pointer">
+                        <FaUsers className="author-note-icon users-icon " />
+                        <h5>Join Our Team</h5>
+                        <p className="font-size-sm font-weight-medium">
+                          Explore opportunities to work for Navratan Foundations
+                        </p>
+                      </li>
+                    </Link>
+                    <Link href={'/donate'} className="">
+                      <li className="flex-1 cursor-pointer">
+                        <FaHandsHelping className="author-note-icon helping-icon" />
+                        <h5>Start Contributing</h5>
+                        <p className="font-size-sm font-weight-medium">
+                          Support the cause and make a difference
+                        </p>
+                      </li>
+                    </Link>
                   </ul>
                 </div>
                 <Link href="/about">
@@ -258,121 +279,25 @@ const Index = () => {
       </section>
       {/*====== About Section End ======*/}
       {/*====== Project Section Start ======*/}
-      <section className="project-section project-section-extra-gap secondary-bg">
+      <section
+        className="project-section project-section-extra-gap secondary-bg"
+        style={{ backgroundColor: '#b6dceda8' }}
+      >
         <div className="container-fluid fluid-extra-padding">
           <div className="common-heading text-center color-version-white mb-60">
             <span className="tagline">
               <i className="fas fa-plus" /> NAVRATAN’s PRIORITIES
-              <span className="heading-shadow-text">Our Projects</span>
+              <span className="heading-shadow-text" style={{ opacity: 1 }}>
+                Our Projects
+              </span>
             </span>
-            <h2 className="title">The projects that define us</h2>
+            <h2 className="title">The Projects that Defines Us</h2>
           </div>
-          <div className="row project-slider-one project-items project-style-one no-shadow">
-            <div class="gallery-one__bottom">
-              <div class="gallery-one__container">
-                <ul class="list-unstyled gallery-one__list ">
-                  <li
-                    class="gallery-one__single wow fadeInUp"
-                    data-wow-delay="100ms"
-                  >
-                    <div class="gallery-one__img">
-                      <img src="assets/img/project/astitva.webp" alt="" />
-                      <div class="gallery-one__content">
-                        <h5 class="gallery-one__title">
-                          <Link href="/projects/astitva">Astitva</Link>
-                        </h5>
-                        <p class="gallery-one__sub-title">
-                          {' '}
-                          A woman’s journey towards Self-Empowerment
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="gallery-one__single wow fadeInUp"
-                    data-wow-delay="100ms"
-                  >
-                    <div class="gallery-one__img">
-                      <img src="assets/img/project/gyanpeeth.webp" alt="" />
-                      <div class="gallery-one__content">
-                        <h5 class="gallery-one__title">
-                          <Link href="/projects/gyanpeeth">
-                            Navratan Gyanpeeth
-                          </Link>
-                        </h5>
-                        <p class="gallery-one__sub-title">
-                          {' '}
-                          Empowering Underprivileged Children
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="gallery-one__single wow fadeInUp"
-                    data-wow-delay="100ms"
-                  >
-                    <div class="gallery-one__img">
-                      <img src="assets/img/project/umeed.webp" alt="" />
-                      <div class="gallery-one__content">
-                        <h5 class="gallery-one__title">
-                          <Link href="/projects/umeed">Umeed</Link>
-                        </h5>
-                        <p class="gallery-one__sub-title">
-                          {' '}
-                          Shikshit Mahila, Unnat Rashtra
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    class="gallery-one__single wow fadeInUp"
-                    data-wow-delay="100ms"
-                  >
-                    <div class="gallery-one__img">
-                      <img src="assets/img/project/cyberurja.webp" alt="" />
-                      <div class="gallery-one__content">
-                        <h5 class="gallery-one__title">
-                          <Link href="/projects/cyberurja">CYBERURJA</Link>
-                        </h5>
-                        <p class="gallery-one__sub-title">
-                          {' '}
-                          A woman’s journey towards Self-Empowerment
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              {/* <div className="project-item">
-                <div
-                  className="thumb"
-                  style={{
-                    backgroundImage: 'url(assets/img/project/astitva.webp)',
-                  }}
-                />
-                <div className="content">
-                  {/* <div className="cats">
-                    <Link href="/project-1">Video &amp; Movies</Link>
-                  </div> 
-                 
-                  <h5 className="title text-center ">
-                    <Link href="/project-details">
-                      <a className="font-size-xl">Astitva</a>
-                    </Link>
-                  </h5>
-                  <div className="project-stats">
-                    <div className="stats-value text-center">
-                      <span className="value-title ">
-                        A woman’s journey towards Self-Empowerment
-                      </span>
-                    </div>
-                 
-                  </div>
-              
-                </div>
-              </div> */}
-            </div>
+          <div
+            className="row project-slider-one project-items project-style-one no-shadow"
+            style={{ justifyContent: 'center' }}
+          >
+            <ProjectsGallery />
             {/* <div className="col">
               <div className="project-item">
                 <div
@@ -977,7 +902,7 @@ const Index = () => {
                     src="https://www.youtube.com/embed/qxmODX7O0Cg?wmode=transparent&amp;vq=hd1080&amp;rel=0&amp;showinfo=0&amp;iframe=1&amp;fs=1&amp;modestbranding=0&amp;autoplay=0&amp;theme=dark&amp;feature=oembed"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""
+                    allowFullScreen=""
                   ></iframe>
                 </div>
               </div>
@@ -995,7 +920,7 @@ const Index = () => {
                     src="https://www.youtube.com/embed/MdNISIvVyNY?wmode=transparent&vq=hd1080&rel=0&showinfo=0&iframe=1&fs=1&modestbranding=0&autoplay=0&theme=dark&feature=oembed"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""
+                    allowFullScreen=""
                   ></iframe>
                 </div>
               </div>
@@ -1013,7 +938,7 @@ const Index = () => {
                     src="https://www.youtube.com/embed/AYHkgonbN8s?wmode=transparent&vq=hd1080&rel=0&showinfo=0&iframe=1&fs=1&modestbranding=0&autoplay=0&theme=dark&feature=oembed"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""
+                    allowFullScreen=""
                   ></iframe>
                 </div>
               </div>

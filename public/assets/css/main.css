@@ -533,8 +533,8 @@ a:hover {
 }
 
 .main-btn.bordered-btn.bordered-white {
-	border-color: var(--white);
-	color: var(--white);
+	border-color: var(--third-color);
+	color: var(--third-color);
 }
 
 .main-btn.bordered-btn.bordered-white:hover {
@@ -930,7 +930,7 @@ a:hover {
 }
 
 .header-topbar .contact-info a {
-	color: var(--white);
+	color: var(--third-color);
 }
 
 .header-topbar .social-icons li {
@@ -943,7 +943,7 @@ a:hover {
 
 .header-topbar .social-icons a {
 	font-size: 15px;
-	color: var(--white);
+	color: var(--third-color);
 }
 
 /*======= Mobile Panel =======*/
@@ -1146,7 +1146,7 @@ a:hover {
 }
 
 .site-footer.with-footer-bg .footer-content-area {
-	background-image: url(../img/home/cyberuja.jpg);
+	/* background-image: url(../img/home/cyberuja.jpg); */
 	background-size: cover;
 	background-position: center;
 	position: relative;
@@ -1215,12 +1215,12 @@ a:hover {
 }
 
 .site-footer .footer-cta .cta-tagline {
-	color: var(--white);
+	color: var(--third-color);
 	font-weight: 500;
 }
 
 .site-footer .footer-cta .cta-title {
-	color: var(--white);
+	color: var(--third-color);
 	font-size: 42px;
 	font-weight: 700;
 	letter-spacing: -2px;
@@ -1251,7 +1251,9 @@ a:hover {
 }
 
 .footer-widgets .widget.about-widget .footer-logo {
-	margin-bottom: 40px;
+	position: relative;
+	top: -16px;
+	margin-bottom: 20px;
 }
 
 .footer-widgets .widget.about-widget p {
@@ -1261,7 +1263,7 @@ a:hover {
 }
 
 .footer-widgets .widget .newsletter-form {
-	margin-top: 30px;
+	margin-top: 35px;
 }
 
 .footer-widgets .widget .newsletter-form .form-title {
@@ -1625,10 +1627,10 @@ a:hover {
 .page-title-area {
 	position: relative;
 	z-index: 1;
-	padding: 125px 0;
+	padding: 200px 0;
 	background-image: url(../img/hero/hero-one-big.jpg);
 	background-size: cover;
-	background-position: 50% 40%;
+	background-position: 50% 25%;
 }
 
 .page-title-area::before {
@@ -1639,8 +1641,8 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background-color: var(--secondary-color);
-	opacity: 0.5;
+	background-color: var(--third-color);
+	opacity: 0.6;
 }
 
 .page-title-area .page-title {
@@ -4025,7 +4027,7 @@ a:hover {
 .about-gallery {
 	text-align: right;
 	position: relative;
-	padding-left: 30px;
+	padding-left: 20px;
 }
 
 .about-gallery img {

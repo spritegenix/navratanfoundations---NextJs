@@ -13,12 +13,14 @@ const Footer = ({ footerSolidBg }) => {
           <div className="container" style={{ borderRadius: '2rem' }}>
             <div className="row justify-content-lg-between justify-content-center align-items-center">
               <div className="col-lg-8 col-md-10 col-sm-10">
-                <span className="cta-tagline">
-                  Together, We Empower Lives and Transform Communities
-                </span>
-                <h3 className="cta-title">
-                  Join Us in Building a Brighter Future for All
-                </h3>
+                <div className="cta-container">
+                  <span className="cta-tagline">
+                    Together, We Empower Lives and Transform Communities
+                  </span>
+                  <h3 className="cta-title">
+                    Join Us in Building a Brighter Future for All
+                  </h3>
+                </div>
               </div>
               <div className="col-lg-auto col-md-4 mx-auto">
                 <Link href="/contact">
@@ -47,7 +49,10 @@ const Footer = ({ footerSolidBg }) => {
                   </p>
                   <div className="newsletter-form">
                     <Link href="/donate">
-                      <a className="main-btn nav-btn d-none d-sm-inline-block Dontate-button">
+                      <a
+                        className="main-btn nav-btn d-none d-sm-inline-block Dontate-button"
+                        style={{ color: '#212121' }}
+                      >
                         Support a Cause <i className="far fa-arrow-right" />
                       </a>
                     </Link>

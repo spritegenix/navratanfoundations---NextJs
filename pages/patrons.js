@@ -71,34 +71,19 @@ const Patrons = () => {
   return (
     <Layout>
       <PageBanner pageName="Patrons" />
-      <section className="event-area section-gap-extra-bottom">
-        <div className="container">
-          <div className="event-items ">
-            {patrons.map((patron) => (
-              <div
-                className="single-event-item mb-30 wow fadeInUp col-xl-4 col-lg-5 col-md-8"
-                style={{ gap: '2rem' }}
-                data-wow-delay="0.1s"
-              >
-                <div className="event-thumb">
-                  <img src={patron.image} alt="Image" />
-                </div>
-                <div className="event-content pr-0">
-                  <h4 className="event-title">{patron.name}</h4>
-                  <p
-                    style={{
-                      fontWeight: '600',
-                      fontSize: '1.2rem',
-                      paddingBottom: '3px',
-                    }}
-                  >
-                    {patron.designation}
-                  </p>
-                  <p>{patron.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <section className="patrons-section " style={{}}>
+        <div className="patrons-container">
+          {patrons.map((patron, index) => (
+            <div
+              className={`patron-card ${index === 0 ? 'first-patron' : ''}`}
+              key={index}
+            >
+              <img src={patron.image} alt={patron.name} />
+              <h4 className="patron-name">{patron.name}</h4>
+              <p className="patron-designation">{patron.designation}</p>
+              <p className="patron-description">{patron.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </Layout>
