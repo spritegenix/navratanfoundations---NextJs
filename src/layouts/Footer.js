@@ -135,7 +135,7 @@ const Footer = ({ footerSolidBg }) => {
                       <span className="info">
                         <span className="info-title">Locations</span>
                         <a href="#">
-                          E-74, Sector 52, Noida, Uttar Pradesh, India
+                          E-74, Sector 52, Noida, <br></br> Uttar Pradesh, India
                         </a>
                       </span>
                     </li>

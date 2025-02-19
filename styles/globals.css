@@ -894,3 +894,11 @@ padding: 10px 0px;
 padding: 10px 0px;
   }
 }
+
+.black{
+  color: var(--third-color) !important;
+}
+
+.info-list li .icon {
+  color: var(--third-color);
+}

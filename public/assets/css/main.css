@@ -501,7 +501,7 @@ a:hover {
 	-webkit-transition: all 0.3s ease-out 0s;
 	-o-transition: all 0.3s ease-out 0s;
 	transition: all 0.3s ease-out 0s;
-	color: var(--white);
+	color: var(--third-color);
 	background-color: var(--primary-color);
 	padding: 16px 36px;
 	border-radius: 35px;
@@ -1707,7 +1707,7 @@ a:hover {
 	display: block;
 	font-size: 15px;
 	font-weight: 700;
-	color: var(--primary-color);
+	color: var(--oxpins-primary);
 	padding: 5px 0;
 	margin-bottom: 20px;
 	line-height: 1.4;
@@ -1724,7 +1724,7 @@ a:hover {
 	font-size: 60px;
 	font-family: var(--shadows-font);
 	line-height: 1;
-	color: #01171c;
+	color: var(--third-color);
 	letter-spacing: -0.5px;
 	position: absolute;
 	left: 0;

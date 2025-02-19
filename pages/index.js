@@ -287,11 +287,11 @@ const Index = () => {
           <div className="common-heading text-center color-version-white mb-60">
             <span className="tagline">
               <i className="fas fa-plus" /> NAVRATAN’s PRIORITIES
-              <span className="heading-shadow-text" style={{ opacity: 1 }}>
+              <span className="heading-shadow-text" style={{ opacity: 0.7 }}>
                 Our Projects
               </span>
             </span>
-            <h2 className="title">The Projects that Defines Us</h2>
+            <h2 className="title black">The Projects that Defines Us</h2>
           </div>
           <div
             className="row project-slider-one project-items project-style-one no-shadow"
