@@ -229,7 +229,7 @@ const Index = () => {
               <div className="about-text mt-md-70 mb-md-50">
                 <div className="common-heading mb-30">
                   <span className="tagline">
-                    <i className="fas fa-plus" /> who we are
+                    {/* <i className="fas fa-plus" /> who we are */}
                     <span className="heading-shadow-text">About Us</span>
                   </span>
                   <h2 className="">
@@ -286,10 +286,8 @@ const Index = () => {
         <div className="container-fluid fluid-extra-padding">
           <div className="common-heading text-center color-version-white mb-60">
             <span className="tagline">
-              <i className="fas fa-plus" /> NAVRATAN’s PRIORITIES
-              <span className="heading-shadow-text" style={{ opacity: 0.7 }}>
-                Our Projects
-              </span>
+              {/* <i className="fas fa-plus" /> NAVRATAN’s PRIORITIES */}
+              <span className="heading-shadow-text">Our Projects</span>
             </span>
             <h2 className="title black">The Projects that Defines Us</h2>
           </div>
@@ -654,7 +652,7 @@ const Index = () => {
                     accusantium doloremque laudan totamrem aperiam eaque quae
                     abille
                   </p> */}
-                  <Link href="/events">
+                  <Link href="/contact">
                     <a className="main-btn">
                       Get Involved <i className="far fa-arrow-right" />
                     </a>
@@ -747,7 +745,7 @@ const Index = () => {
         <div className="container">
           <div className="common-heading mb-30">
             <span className="tagline">
-              <i className="fas fa-plus" /> Our Partners
+              {/* <i className="fas fa-plus" /> Our Partners */}
               <span className="heading-shadow-text">Partners</span>
             </span>
             <h2 className="title">
@@ -883,7 +881,7 @@ const Index = () => {
         <div className="container">
           <div className="common-heading text-center mb-30">
             <span className="tagline">
-              <i className="fas fa-plus" /> stories
+              {/* <i className="fas fa-plus" /> stories */}
               <span className="heading-shadow-text">Inspiring Stories</span>
             </span>
             <h2 className="title">MOVING STORIES: Bringing Tales to Life</h2>

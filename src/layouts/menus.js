@@ -19,14 +19,14 @@ const Home = (
       {/* <li>
         <Link href="/who-we-are">WHO ARE WE</Link>
       </li> */}
-      <li>
+      {/* <li>
         <a
           href="https://navratanfoundations.com/samarpan-2023.pdf"
           target="_blank"
         >
           Annual Report – 2023
         </a>
-      </li>
+      </li> */}
       <li>
         <a href="#">
           Navratan Pariwaar

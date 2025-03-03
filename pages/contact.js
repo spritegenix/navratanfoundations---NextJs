@@ -14,8 +14,8 @@ const Contact = () => {
               <div className="contact-info-text mb-md-70">
                 <div className="common-heading mb-30">
                   <span className="tagline">
-                    <i className="fas fa-plus" />
-                    Contact
+                    {/* <i className="fas fa-plus" />
+                    Contact */}
                     <span className="heading-shadow-text">Contact Us</span>
                   </span>
                   <h2 className="title">
