@@ -21,7 +21,7 @@ const ProjectsGallery = () => {
       link: '/projects/umeed',
     },
     {
-      title: 'CYBERURJA',
+      title: 'Cyberurja',
       description: 'Empowering with Computer Education',
       image: 'assets/img/project/cyberurja.webp',
       link: '/projects/cyberurja',

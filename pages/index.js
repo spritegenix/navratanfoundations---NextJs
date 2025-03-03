@@ -11,23 +11,29 @@ import {
 import Link from 'next/link';
 import { FaHandsHelping, FaUser, FaUsers } from 'react-icons/fa';
 import ProjectsGallery from '../src/components/ProjectsCard';
+import MainSlider from '../src/components/HeroSection';
 
 const Index = () => {
   return (
     <Layout transparentHeader transparentTop footerSolidBg>
       <section className="hero-area-one">
         <div className="hero-text">
+          {/* <MainSlider /> */}
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col-xl-10">
-                {/* <span className="tagline wow fadeInUp" data-wow-delay="0.3s">
-                  Crowdfounding Agency
-                </span> */}
-                <h1 className="title wow fadeInUp" data-wow-delay="0.4s">
+              <div className="col-xl-10 herotitle">
+                <h1
+                  className="title wow fadeInUp typingtitle"
+                  data-wow-delay="0.4s"
+                >
+                  Unlocking Futures with Grassroots Education{' '}
+                </h1>
+                <h5 className=" wow fadeInUp typingtitle" data-wow-delay="0.4s">
+                  {' '}
                   <Typewriter
                     options={{
                       strings: [
-                        'Unlocking Futures with Grassroots Education',
+                        // 'Unlocking Futures with Grassroots Education',
                         'Empowering Communities Through Learning',
                       ],
                       autoStart: true,
@@ -36,7 +42,8 @@ const Index = () => {
                       cursor: '', // Custom cursor
                     }}
                   />
-                </h1>
+                </h5>
+
                 <Link href="/projects">
                   <a className="main-btn wow fadeInUp" data-wow-delay="0.5s">
                     Explore Projects <i className="far fa-arrow-right" />

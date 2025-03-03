@@ -71,7 +71,7 @@ const Patrons = () => {
   return (
     <Layout>
       <PageBanner pageName="Patrons" />
-      <section className="patrons-section " style={{}}>
+      <section className="patrons-section">
         <div className="patrons-container">
           {patrons.map((patron, index) => (
             <div
@@ -79,7 +79,12 @@ const Patrons = () => {
               key={index}
             >
               <img src={patron.image} alt={patron.name} />
-              <h4 className="patron-name">{patron.name}</h4>
+              <h4 className="patron-name">
+                {patron.name}
+                {index === 0 && (
+                  <span className="chief-patron">Chief Patron</span>
+                )}
+              </h4>
               <p className="patron-designation">{patron.designation}</p>
               <p className="patron-description">{patron.description}</p>
             </div>

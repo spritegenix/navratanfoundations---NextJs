@@ -20,7 +20,7 @@ const About = () => {
               <div className="about-text mb-lg-50">
                 <div className="common-heading mb-30">
                   <span className="tagline">
-                    <i className="fas fa-plus" /> About us
+                    {/* <i className="fas fa-plus" /> About us */}
                     <span className="heading-shadow-text">About Us</span>
                   </span>
                   <h2 className="title">
@@ -1009,7 +1009,7 @@ const About = () => {
         <div className="container mb-30">
           <div className="common-heading mb-30">
             <span className="tagline">
-              <i className="fas fa-plus" /> Our Partners
+              {/* <i className="fas fa-plus" /> Our Partners */}
               <span className="heading-shadow-text">Partners</span>
             </span>
             <h2 className="title">

@@ -16,25 +16,42 @@ const Cards = () => {
               </h4>
 
               <ul className="plan-feature">
-                <li>
-                  <i className="fas fa-heart" /> Navratan Foundations welcomes
-                  volunteers aged 18 and above to contribute to the development
-                  sector.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Navratan Foundations welcomes volunteers aged 18 and above
+                    to contribute to the development sector.
+                  </span>
                 </li>
-                <li>
-                  <i className="fas fa-heart" /> Volunteers must be ready to
-                  devote at least 12 hours per week.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Volunteers must be ready to devote at least 12 hours per
+                    week.
+                  </span>
                 </li>
-                <li className="">
-                  <i className="fas fa-heart" /> Opportunities are available
-                  based on your credentials, whether for fieldwork or office
-                  tasks.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Opportunities are available based on your credentials,
+                    whether for fieldwork or office tasks.
+                  </span>
                 </li>
-                <li className="">
-                  <i className="fas fa-heart" /> Your efforts will support
-                  initiatives in education for out-of-school children, women
-                  empowerment, environmental projects, and effective
-                  communication.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Your efforts will support initiatives in education for
+                    out-of-school children, women empowerment, environmental
+                    projects, and effective communication.
+                  </span>
                 </li>
               </ul>
 
@@ -54,23 +71,42 @@ const Cards = () => {
               </h6>
 
               <ul className="plan-feature">
-                <li>
-                  <i className="fas fa-heart" /> Navratan Foundations offers
-                  internships for university students seeking meaningful
-                  experience while contributing to a noble cause.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Navratan Foundations offers internships for university
+                    students seeking meaningful experience while contributing to
+                    a noble cause.
+                  </span>
                 </li>
-                <li>
-                  <i className="fas fa-heart" /> Internships are available for a
-                  minimum of one month and up to three months.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Internships are available for a minimum of one month and up
+                    to three months.
+                  </span>
                 </li>
-                <li>
-                  <i className="fas fa-heart" /> Although unpaid, interns will
-                  receive a certificate acknowledging their dedication to our
-                  mission.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Although unpaid, interns will receive a certificate
+                    acknowledging their dedication to our mission.
+                  </span>
                 </li>
-                <li className="">
-                  <i className="fas fa-heart" /> Be part of our transformative
-                  journey and make a positive impact.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Be part of our transformative journey and make a positive
+                    impact.
+                  </span>
                 </li>
               </ul>
 
@@ -90,23 +126,41 @@ const Cards = () => {
               </h6>
 
               <ul className="plan-feature">
-                <li>
-                  <i className="fas fa-heart" /> Navratan Foundations offers the
-                  position of Trustee or Honorary Trustee for a lifetime.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Navratan Foundations offers the position of Trustee or
+                    Honorary Trustee for a lifetime.
+                  </span>
                 </li>
-                <li>
-                  <i className="fas fa-heart" /> We seek respectable individuals
-                  passionate about social development and impactful
-                  contributions.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    We seek respectable individuals passionate about social
+                    development and impactful contributions.
+                  </span>
                 </li>
-                <li>
-                  <i className="fas fa-heart" /> Trustees dedicate themselves to
-                  creating a lasting positive impact and shaping a brighter
-                  future.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Trustees dedicate themselves to creating a lasting positive
+                    impact and shaping a brighter future.
+                  </span>
                 </li>
-                <li>
-                  <i className="fas fa-heart" /> Be part of our mission to make
-                  a meaningful difference in the lives of many.
+                <li className="d-flex">
+                  <span>
+                    <i className="fas fa-heart" />
+                  </span>
+                  <span>
+                    Be part of our mission to make a meaningful difference in
+                    the lives.
+                  </span>
                 </li>
               </ul>
 

@@ -173,8 +173,9 @@ const Footer = ({ footerSolidBg }) => {
               <div className="col-md-8">
                 <p className="copyright-text">
                   © {new Date().getFullYear()} Navratan Foundation All Rights
-                  Reserved. Designed and Developed by{' '}
-                  <a href="https://www.spritegenix.com/">SpriteGenix</a>
+                  Reserved.
+                  {/* Designed and Developed by{' '}
+                  <a href="https://www.spritegenix.com/">SpriteGenix</a> */}
                 </p>
               </div>
             </div>

@@ -8,6 +8,7 @@
 	.hero-area-one .hero-images {
 		padding: 0 80px;
 	}
+
 }
 
 /*=======  Extra Large devices (desktops, less than 1470px) =======*/
@@ -34,6 +35,7 @@
 	.about-section-two .about-text .common-heading .title {
 		font-size: 38px;
 	}
+
 	
 }
 
@@ -45,7 +47,7 @@
 	}
 
 	.hero-area-one .hero-text {
-		padding-bottom: 305px;
+		padding-bottom: 0px;
 	}
 
 	.hero-area-one .hero-shapes .hero-line-one {
@@ -141,6 +143,14 @@
 
 /*=======  Large devices (desktops, less than 1200px) =======*/
 @media (max-width: 1199.98px) {
+	.typingtitle{
+		font-size: 1.8rem;
+		padding-bottom: 2rem;
+	}
+	.herotitle{
+		margin-bottom: 2rem;
+	}
+	/*======= Common Heading =======*/
 	.navbar-wrapper .nav-menu a{
 		font-size: 12px;
 	}
@@ -162,11 +172,11 @@
 	}
 
 	.hero-area-one .hero-images {
-		margin-top: -160px;
+		margin-top: 0px;
 	}
 
 	.hero-area-one .hero-text {
-		padding-bottom: 240px;
+		padding-bottom: 0px;
 	}
     /*======= Hero Area Two =======*/
 	.hero-area-two .hero-text .title {
@@ -500,11 +510,11 @@
 
 	.hero-area-one .hero-images {
 		padding: 0 20px;
-		margin-top: -140px;
+		margin-top: 0;
 	}
 
 	.hero-area-one .hero-text {
-		padding-bottom: 220px;
+		padding-bottom: 0px;
 	}
 
 	.hero-area-two {
@@ -671,6 +681,13 @@
 	}
 	.project-titles{
 		font-size: x-large !important;
+	}
+	.typingtitle{
+		font-size: 1.8rem;
+		padding-bottom: 2rem;
+	}
+	.herotitle{
+		margin-bottom: 2rem;
 	}
 }
 
@@ -947,8 +964,8 @@
 
     /*======= Hero Area One =======*/
 	.hero-area-one .hero-text {
-		padding-top: 160px;
-		padding-bottom: 110px;
+		padding-top: 90px;
+		padding-bottom: 50px;
 	}
 
 	.hero-area-one .hero-text .tagline {
@@ -1580,6 +1597,41 @@
 
 	.image-text-block .block-content {
 		padding: 50px 30px 40px;
+	}
+	.typingtitle{
+		font-size: 1rem;
+		padding-bottom: 2rem;
+	}
+	.hero-area-one .hero-text .title{
+		margin: 2rem 0 0 0;
+	}
+	.about-section-one {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.cta-box .cta-title{
+		padding: 0;
+	}
+	.project-section.project-section-extra-gap{
+		padding-top: 80px;
+	}
+	.partners-section {
+		padding-top: 66px;
+	}
+	.emergency-project-with-cta .emergency-project-slider{
+		padding-bottom: 40px;
+	}
+	.teamflex{
+		gap: 10px !important;
+		grid-gap: 15px
+	}
+	.testimonials-section{
+		padding-top: 70px;
+
+		padding-bottom: 70px;
+	}
+	.latest-blog-section{
+		padding-bottom: 40px
 	}
 }
 

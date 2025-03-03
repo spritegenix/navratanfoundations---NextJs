@@ -5279,3 +5279,46 @@ a:hover {
 .contact-form textarea:not(:focus) {
 	border-color: transparent;
 }
+
+.typingtitle{
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+.chief-patron {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: #e74c3c;  /* Red background to make it pop */
+	padding: 5px 10px;
+	border-radius: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .patron-card .patron-designation:first-of-type {
+	font-size: medium;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1724,7 +1724,7 @@ a:hover {
 	font-size: 60px;
 	font-family: var(--shadows-font);
 	line-height: 1;
-	color: var(--third-color);
+	color: var(--oxpins-primary);
 	letter-spacing: -0.5px;
 	position: absolute;
 	left: 0;
@@ -1748,9 +1748,9 @@ a:hover {
 	transform: translate(-50%, -50%);
 }
 
-.common-heading.color-version-white .heading-shadow-text {
+/* .common-heading.color-version-white .heading-shadow-text {
 	color: #898989;
-}
+} */
 
 .common-heading.color-version-white .title {
 	color: var(--white);
@@ -3134,6 +3134,7 @@ a:hover {
 	font-size: 42px;
 	line-height: 1.3;
 	margin-bottom: 25px;
+	padding: 0 50px;
 }
 
 .cta-box::before {
@@ -3144,8 +3145,8 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background-color: var(--secondary-color);
-	opacity: 0.9;
+	background-color: var(--third-color);
+	opacity: 0.7;
 	border-radius: 2rem;
 }
 
@@ -3161,7 +3162,7 @@ a:hover {
 	padding: 80px 45px;
 }
 
-.cta-box.cta-double-content::after {
+/* .cta-box.cta-double-content::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -3174,7 +3175,7 @@ a:hover {
 	background-color: var(--white);
 	z-index: 1;
 	opacity: 0.2;
-}
+} */
 
 /*======= Latest Blog =======*/
 .latest-blog-posts .post-thumb img {
@@ -5278,3 +5279,46 @@ a:hover {
 .contact-form textarea:not(:focus) {
 	border-color: transparent;
 }
+
+.typingtitle{
+	font-size: 3rem;
+	padding-bottom: 2rem;
+}
+
+.chief-patron {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: #e74c3c;  /* Red background to make it pop */
+	padding: 5px 10px;
+	border-radius: 5px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .patron-card .patron-designation:first-of-type {
+	font-size: medium;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
