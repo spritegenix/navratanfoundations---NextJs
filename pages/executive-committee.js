@@ -146,7 +146,7 @@ const executive = [
   },
   {
     name: 'Murari Prasad Srivastava',
-    role: 'General Secretary',
+    role: 'Vice President',
     image: '/assets/img/executive/murari-prasad-150x150-1.png',
     description:
       'A retired professional from PDIL, Noida, with a deep passion for theater and social work. Currently, he is an active Real Estate Consultant specializing in Noida, Greater Noida, and the NCR region, while remaining engaged in community welfare activities.',
@@ -181,7 +181,7 @@ const executive = [
   },
   {
     name: 'A.V. Murlidharan',
-    role: 'Financial Advisor',
+    role: 'General Secretary',
     image: '/assets/img/executive/mulridharan.png',
     description:
       'A science graduate with a postgraduate degree in Marketing and International Trade. Since 1999, he has led RAV International, providing automation and barcoding solutions. A dedicated social worker, he is now exploring digital outdoor media innovations.',

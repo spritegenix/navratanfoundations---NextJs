@@ -239,7 +239,7 @@ const ProjectDetails = () => {
                         <p>{filterData[0].longTermGoal[0].text}</p>
                         <br />
                         <p>{filterData[0].longTermGoal[1].text}</p>
-                        <Link href="/about">
+                        <Link href="/donate">
                           <a className="main-btn mt-35">
                             Donate Now <i className="far fa-arrow-right" />
                           </a>

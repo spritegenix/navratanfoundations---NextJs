@@ -33,8 +33,9 @@ const Index = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        // 'Unlocking Futures with Grassroots Education',
                         'Empowering Communities Through Learning',
+                        'Inspiring Change Through Quality Education',
+                        'Creating Opportunities Through Knowledge',
                       ],
                       autoStart: true,
                       loop: true,

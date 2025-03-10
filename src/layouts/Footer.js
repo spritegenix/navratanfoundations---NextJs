@@ -64,9 +64,7 @@ const Footer = ({ footerSolidBg }) => {
                   <h4 className="widget-title">Non Profit</h4>
                   <ul>
                     <li>
-                      <Link href="https://navratanfoundations.com/samarpan-2023.pdf">
-                        Annual Report
-                      </Link>
+                      <Link href="/patrons">Patrons</Link>
                     </li>
                     <li>
                       <Link href="/founder">Founder's Profile</Link>
@@ -77,7 +75,7 @@ const Footer = ({ footerSolidBg }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/patrons">Patrons</Link>
+                      <Link href="/advisors">Advisors</Link>
                     </li>
                   </ul>
                 </div>
